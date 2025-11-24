@@ -135,12 +135,12 @@ export function MetricsPanel() {
                 <div className="text-xs text-muted-foreground/60 mt-1">Across 4 states</div>
               </div>
               <div>
-                <div className="text-2xl sm:text-3xl font-bold text-success mb-1">24+</div>
+                <div className="text-2xl sm:text-3xl font-bold text-success mb-1">30+</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Employers Engaged</div>
                 <div className="text-xs text-muted-foreground/60 mt-1">In alignment work</div>
               </div>
               <div>
-                <div className="text-2xl sm:text-3xl font-bold text-accent mb-1">3</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent mb-1">18+</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Phase Action Framework</div>
                 <div className="text-xs text-muted-foreground/60 mt-1">Flexible timeline</div>
               </div>
