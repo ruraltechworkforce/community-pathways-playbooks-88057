@@ -16,7 +16,7 @@ interface Metric {
 const metrics: Metric[] = [
   {
     id: 'partnership-engagement',
-    label: 'Active Community Partnerships',
+    label: 'Partnerships with communities whose populations are at least 24.8% BIPOC',
     value: 6,
     target: 6,
     unit: '',
@@ -26,9 +26,9 @@ const metrics: Metric[] = [
   },
   {
     id: 'employer-participation',
-    label: 'Employers Engaged in Alignment',
-    value: 24,
-    target: 36,
+    label: 'Engaged community partners',
+    value: 71,
+    target: 24,
     unit: '',
     trend: 'up',
     icon: <Building2 className="w-5 h-5" />,
