@@ -128,7 +128,7 @@ export function MetricsPanel() {
             <p className="text-sm text-muted-foreground">
               This initiative engaged stakeholders across six rural communities through structured employer roundtables and educator discussions conducted between Fall 2024 and Winter 2025.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 text-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-center">
               <div>
                 <div className="text-2xl sm:text-3xl font-bold text-primary mb-1">6</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Rural Communities</div>
@@ -138,6 +138,11 @@ export function MetricsPanel() {
                 <div className="text-2xl sm:text-3xl font-bold text-success mb-1">30+</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Employers Engaged</div>
                 <div className="text-xs text-muted-foreground/60 mt-1">In alignment work</div>
+              </div>
+              <div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent mb-1">18+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Phase Action Framework</div>
+                <div className="text-xs text-muted-foreground/60 mt-1">Flexible timeline</div>
               </div>
             </div>
           </div>
