@@ -142,7 +142,7 @@ export function MetricsPanel() {
               <div>
                 <div className="text-2xl sm:text-3xl font-bold text-accent mb-1">18+</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Training Partners Engaged</div>
-                <div className="text-xs text-muted-foreground/60 mt-1">For Tech Upskilling</div>
+                <div className="text-xs text-muted-foreground/60 mt-1">For tech upskilling</div>
               </div>
             </div>
           </div>
