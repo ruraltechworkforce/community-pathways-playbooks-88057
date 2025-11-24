@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { TrendingUp, Users, Building2, Target, Zap } from "lucide-react";
+import { TrendingUp, Users, Building2, ClipboardList, GraduationCap, Briefcase } from "lucide-react";
 
 interface Metric {
   id: string;
@@ -35,24 +35,34 @@ const metrics: Metric[] = [
     color: 'text-success'
   },
   {
-    id: 'learning-opportunities',
-    label: 'Work-Integrated Learning Opportunities',
-    value: 12,
-    target: 30,
+    id: 'survey-responses',
+    label: 'Responses from surveys',
+    value: 47,
+    target: 36,
     unit: '',
     trend: 'up',
-    icon: <Target className="w-5 h-5" />,
+    icon: <ClipboardList className="w-5 h-5" />,
     color: 'text-accent'
   },
   {
-    id: 'skill-alignment',
-    label: 'Skills-Training Programs Aligned',
-    value: 8,
-    target: 18,
+    id: 'training-participation',
+    label: 'Participation in tech training and/or wrap around support',
+    value: 156,
+    target: 180,
     unit: '',
     trend: 'up',
-    icon: <Zap className="w-5 h-5" />,
+    icon: <GraduationCap className="w-5 h-5" />,
     color: 'text-warning'
+  },
+  {
+    id: 'internship-plans',
+    label: 'Employers with plans to launch internships',
+    value: 34,
+    target: 48,
+    unit: '',
+    trend: 'up',
+    icon: <Briefcase className="w-5 h-5" />,
+    color: 'text-primary'
   }
 ];
 
@@ -66,7 +76,7 @@ export function MetricsPanel() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
         {metrics.map((metric) => (
           <Card key={metric.id} className="glass-card shadow-custom">
             <CardHeader className="pb-3">
