@@ -41,7 +41,7 @@ jobs:
 
           // https://vitejs.dev/config/
           export default defineConfig(({ mode }) => ({
-            base: mode === "production" ? "/${{ github.event.repository.name }}/" : "/",
+            base: "/${{ github.event.repository.name }}/",
             server: {
               host: "::",
               port: 8080,
