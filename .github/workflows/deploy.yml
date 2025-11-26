@@ -54,6 +54,7 @@ jobs:
             },
           }));
           EOF
+          cat vite.config.ts
 
       - name: Build
         run: npm run build
