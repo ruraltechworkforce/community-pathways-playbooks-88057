@@ -54,10 +54,11 @@ jobs:
             },
           }));
           EOF
-          cat vite.config.ts
 
       - name: Build
-        run: npm run build
+        run: |
+          cat vite.config.ts
+          npm run build
 
       - name: Copy dist files to subfolder
         run: |
