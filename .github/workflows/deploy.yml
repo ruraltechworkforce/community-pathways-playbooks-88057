@@ -34,6 +34,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Copy dist files to subfolder
+        run: |
+          mv ./dist ./dist-temp
+          mkdir ./dist
+          mv ./dist-temp "./dist/${{ github.event.repository.name }}"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
