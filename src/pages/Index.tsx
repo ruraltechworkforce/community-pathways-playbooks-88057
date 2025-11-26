@@ -288,7 +288,7 @@ const Index = () => {
                       <div className="text-xs sm:text-sm text-muted-foreground">Pattern Consistency</div>
                     </div>
                     <div className="text-center p-3 sm:p-4 rounded-lg bg-muted/20">
-                      <div className="text-2xl sm:text-3xl font-bold text-warning mb-2">3</div>
+                      <div className="text-2xl sm:text-3xl font-bold text-primary mb-2">3</div>
                       <div className="text-xs sm:text-sm text-muted-foreground">Phase Implementation Framework</div>
                     </div>
                   </div>
