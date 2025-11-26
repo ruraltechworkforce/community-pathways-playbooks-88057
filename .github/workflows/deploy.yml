@@ -41,7 +41,7 @@ jobs:
 
           // https://vitejs.dev/config/
           export default defineConfig(({ mode }) => ({
-            base: "",
+            base: "/${{ github.event.repository.name }}/",
             server: {
               host: "::",
               port: 8080,
@@ -57,16 +57,8 @@ jobs:
 
       - name: Build
         run: |
-          ls ./*
           cat vite.config.ts
           npm run build
-
-      - name: Copy dist files to subfolder
-        run: |
-          mv ./dist ./dist-temp
-          mkdir ./dist
-          mv ./dist-temp "./dist/${{ github.event.repository.name }}"
-          cd ./dist && ln -s "./${{ github.event.repository.name }}/index.html" index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
