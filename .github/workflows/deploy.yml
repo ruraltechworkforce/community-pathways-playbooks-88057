@@ -39,6 +39,7 @@ jobs:
           mv ./dist ./dist-temp
           mkdir ./dist
           mv ./dist-temp "./dist/${{ github.event.repository.name }}"
+          cd ./dist && ln -s "./${{ github.event.repository.name }}/index.html" index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
